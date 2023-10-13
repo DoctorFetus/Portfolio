@@ -6,6 +6,10 @@ type Props = {
   viewBox?: string;
 };
 export const Icon = ({ iconId, width = '50px', height = '50px', viewBox = '0 0 50 50' }: Props) => {
+  if (iconId === 'react') {
+    viewBox = '0 0 113 101';
+  }
+
   return (
     <svg
       width={width}
