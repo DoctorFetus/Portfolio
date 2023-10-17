@@ -4,6 +4,7 @@ import { Header } from './layuot/header/Header';
 import { Main } from './layuot/sections/main/Main';
 import React from 'react';
 import { Skills } from './layuot/sections/skills/Skills';
+import { Works } from './layuot/sections/works/Works';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Main />
       <Skills />
+      <Works />
     </div>
   );
 }
