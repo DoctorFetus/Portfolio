@@ -5,6 +5,8 @@ import { Main } from './layuot/sections/main/Main';
 import React from 'react';
 import { Skills } from './layuot/sections/skills/Skills';
 import { Works } from './layuot/sections/works/Works';
+import { Contacts } from './layuot/sections/contacts/Contacts';
+import { Footer } from './layuot/footer/Footer';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Main />
       <Skills />
       <Works />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
