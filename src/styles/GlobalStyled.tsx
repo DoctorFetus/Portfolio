@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { theme } from './Theme';
 
 export const GlobalStyled = createGlobalStyle`
   
@@ -16,6 +17,7 @@ export const GlobalStyled = createGlobalStyle`
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: ${theme.colors.dark};
   }
 
  a {
@@ -29,6 +31,13 @@ export const GlobalStyled = createGlobalStyle`
  button {
    border: none;
    background-color: unset;
+ }
+ 
+ a {
+   color: inherit;
+ }
+ a:visited {
+   color: inherit;
  }
  
 `;

@@ -4,6 +4,7 @@ import { Menu } from '../../components/menu/Menu';
 import { Container } from '../../components/container/Container';
 import React from 'react';
 import { FlexWrapper } from '../../components/FlexWrapper';
+import { OutlineIconsLinks } from '../../components/socialLinks/OutlineIconsLinks';
 
 export const Header = () => {
   return (
@@ -11,7 +12,10 @@ export const Header = () => {
       <StyledHeader>
         <Container>
           <FlexWrapper alignItems={'center'} justifyContent={'space-between'}>
-            <Logo />
+            <FlexWrapper gap={'41px'}>
+              <Logo />
+              <OutlineIconsLinks />
+            </FlexWrapper>
             <Menu />
           </FlexWrapper>
         </Container>
@@ -24,5 +28,6 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: brown;
+  margin-top: 40px;
+  //background-color: brown;
 `;
