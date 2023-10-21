@@ -23,8 +23,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  //position: relative;
-  min-height: 867px;
+  min-height: 876px;
   width: 100%;
   display: flex;
   align-items: center;
