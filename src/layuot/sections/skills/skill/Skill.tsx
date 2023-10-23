@@ -2,6 +2,8 @@ import { Icon } from '../../../../components/icon/Icon';
 import { FlexWrapper } from '../../../../components/FlexWrapper';
 import styled from 'styled-components';
 import { theme } from '../../../../styles/Theme';
+import React from 'react';
+import { SkillText } from '../../../../components/SkillText';
 
 type Props = {
   title: string;
@@ -22,15 +24,6 @@ export const Skill = ({ title, icon }: Props) => {
     </StyledSkill>
   );
 };
-
-const SkillText = styled.p`
-  color: ${theme.colors.dark};
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 27px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-`;
 
 const StyledSkill = styled.div`
   margin-top: 60px;
