@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import projectTemplate from '../../../assets/images/projects/social-network.png';
-import { SkillText } from '../../../components/SkillText';
 import { theme } from '../../../styles/Theme';
 
 type Props = {
