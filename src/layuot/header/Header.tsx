@@ -29,5 +29,4 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
-  //background-color: brown;
 `;

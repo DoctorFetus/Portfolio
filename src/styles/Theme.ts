@@ -5,6 +5,7 @@ export const theme = {
     light: '#fff',
     darkFont: '#333',
     lightFont: '#777',
-    contactsBg: 'rgba(241, 241, 241, 0.10)'
+    contactsBg: 'rgba(241, 241, 241, 0.10)',
+    footerIcons: '#CCCCCC'
   }
 };

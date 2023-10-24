@@ -10,21 +10,27 @@ export const OutlineIconsLinks = () => {
   return (
     <StyledLinks>
       <FlexWrapper alignItems={'center'} gap={'25px'}>
-        <a href="https://github.com/DoctorFetus">
+        <IconWrapper href="https://github.com/DoctorFetus" target={'_blank'}>
           <FiGithub size={34} color={'white'} />
-        </a>
-        <a href="https://www.linkedin.com/in/mikhail-palkin-a66b42257/">
+        </IconWrapper>
+        <IconWrapper href="https://www.linkedin.com/in/mikhail-palkin-a66b42257/" target={'_blank'}>
           <AiOutlineLinkedin size={34} color={'white'} />
-        </a>
-        <a href="https://t.me/bvsxtv">
+        </IconWrapper>
+        <IconWrapper href="https://t.me/bvsxtv" target={'_blank'}>
           <RiTelegramLine size={34} color={'white'} />
-        </a>
-        <a href="https://www.codewars.com/users/mdpalkin">
+        </IconWrapper>
+        <IconWrapper href="https://www.codewars.com/users/mdpalkin" target={'_blank'}>
           <SiCodewars size={34} color={'white'} />
-        </a>
+        </IconWrapper>
       </FlexWrapper>
     </StyledLinks>
   );
 };
 
 const StyledLinks = styled.div``;
+
+const IconWrapper = styled.a`
+  &:hover {
+    transform: translateY(-4px);
+  }
+`;
