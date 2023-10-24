@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/container/Container';
 import { theme } from '../../../styles/Theme';
+import { Icon } from '../../../components/icon/Icon';
 
 export const Contacts = () => {
   return (
     <StyledContacts>
       <Container>
-        <FlexWrapper gap={'304px'} justifyContent={'center'}>
+        <FlexWrapper gap={'304px'} justifyContent={'center'} alignItems={'center'}>
           <Text>
             <Phrase>
               I’m available for a exciting new project. <span>Let’s Talk</span>.
@@ -18,12 +19,15 @@ export const Contacts = () => {
             </Information>
           </Text>
           <StyledForm>
-            <Field placeholder={'Name'} />
-            <Field placeholder={'Email Address'} />
-            <Field placeholder={'Address'} />
+            <Field placeholder={'Name *'} />
+            <Field placeholder={'Email Address *'} />
+            {/*<Field placeholder={'Address *'} />*/}
             <Field placeholder={'Phone'} />
             <Field placeholder={'Your message'} as={'textarea'} />
-            <StyledButton>Submit</StyledButton>
+            <StyledButton>
+              Submit{' '}
+              <Icon iconId={'submitArrow'} viewBox={'0 0 14 10'} width={'14'} height={'10'} />
+            </StyledButton>
           </StyledForm>
         </FlexWrapper>
       </Container>
@@ -66,27 +70,48 @@ const Information = styled.p`
 `;
 
 const StyledForm = styled.form`
-  //display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   max-width: 470px;
   width: 100%;
-
-  input {
-    max-width: 229px;
-    width: 100%;
-    margin: 3px;
-  }
+  justify-content: center;
 
   textarea {
-    width: 100%;
+    resize: none;
     height: 135px;
-  }
-  button {
-    width: 100%;
-    background-color: ${theme.colors.accent};
-    color: ${theme.colors.light};
   }
 `;
 
-const Field = styled.input``;
+const Field = styled.input`
+  width: 100%;
+  background-color: ${theme.colors.contactsBg};
+  border: none;
+  padding: 15px;
+  color: ${theme.colors.lightFont};
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 101.5%;
 
-const StyledButton = styled.button``;
+  &:focus-visible {
+    outline: 1px solid;
+  }
+`;
+
+const StyledButton = styled.button`
+  width: 100%;
+  background-color: ${theme.colors.accent};
+  font-family: Roboto, sans-serif;
+  color: ${theme.colors.light};
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 101.5%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+`;
