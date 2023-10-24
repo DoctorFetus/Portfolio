@@ -23,6 +23,8 @@ export const Works = () => {
             description={
               'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
             }
+            codeLink={'https://github.com/DoctorFetus/todolist_learn'}
+            previewLink={'https://andrey-kuznetsov.github.io/todolist/'}
           />
           <Project
             title={'Social-network'}
@@ -30,6 +32,8 @@ export const Works = () => {
             description={
               'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
             }
+            codeLink={'https://github.com/DoctorFetus/React-Samurai_way'}
+            previewLink={'https://social-network-doctorfetus.vercel.app/profile'}
           />
           <Project
             title={'Social-network'}
@@ -37,6 +41,7 @@ export const Works = () => {
             description={
               'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
             }
+            codeLink={'https://github.com/DoctorFetus/recursive-shopping-list'}
           />
           <Project
             title={'Counter'}
@@ -44,6 +49,7 @@ export const Works = () => {
             description={
               'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
             }
+            codeLink={'https://github.com/DoctorFetus/Counter_Maria'}
           />
         </FlexWrapper>
       </Container>

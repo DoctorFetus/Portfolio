@@ -8,11 +8,11 @@ export const Menu = () => {
       <ul>
         <StyledItem>
           <Icon iconId={'email'} height={'24px'} width={'24px'} viewBox={'0 0 24 24'} />
-          <Info>thefireofcoall@gmail.com</Info>
+          <Info href={'mailto:thefireofcoall@gmail.com'}>thefireofcoall@gmail.com</Info>
         </StyledItem>
         <StyledItem>
           <Icon iconId={'headphones'} height={'24px'} width={'24px'} viewBox={'0 0 24 24'} />
-          <Info>+7 915 271 48 99</Info>
+          <Info href={'tel:+79152714899'}>+7 915 271 48 99</Info>
         </StyledItem>
       </ul>
     </StyledMenu>
@@ -27,7 +27,7 @@ const StyledMenu = styled.nav`
   }
 `;
 
-const Info = styled.span`
+const Info = styled.a`
   color: ${theme.colors.light};
   font-size: 18px;
   font-weight: 400;
