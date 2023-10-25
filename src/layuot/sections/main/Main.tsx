@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FlexWrapper } from '../../../components/FlexWrapper';
 
 import my_photo from '../../../assets/images/my_photo.png';
 import { Container } from '../../../components/container/Container';
@@ -23,7 +22,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  min-height: 1030px;
+  min-height: 882px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -57,6 +56,5 @@ const Photo = styled.img`
   right: 0;
   z-index: -1;
   bottom: -250px;
-  left: 700px;
-  //top: -10px;
+  left: 600px;
 `;
