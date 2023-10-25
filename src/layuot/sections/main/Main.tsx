@@ -28,7 +28,7 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   //min-height: 882px;
-  height: 80vh;
+  height: 95vh;
   width: 100%;
   //display: flex;
   //align-items: center;
@@ -62,6 +62,5 @@ const Photo = styled.img`
   position: absolute;
   right: 0;
   z-index: -1;
-  //bottom: -250px;
-  left: 550px;
+  transform: translateX(30%);
 `;
