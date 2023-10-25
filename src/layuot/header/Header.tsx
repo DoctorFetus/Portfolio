@@ -29,4 +29,5 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+  height: 5vh;
 `;

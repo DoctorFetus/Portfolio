@@ -3,19 +3,24 @@ import styled from 'styled-components';
 import my_photo from '../../../assets/images/my_photo.png';
 import { Container } from '../../../components/container/Container';
 import { theme } from '../../../styles/Theme';
+import { FlexWrapper } from '../../../components/FlexWrapper';
 
 export const Main = () => {
   return (
     <StyledMain>
       <Container style={{ position: 'relative' }}>
-        <TextWrapper>
-          <BigText>Building designs that work purely driven by Passion for art and Design</BigText>
-          <SmallText>
-            Labore accusam in modo compungi, iacentem substantiales um se sed esse haec. Possit
-            facis qui a a a patriam Dianae sibi aperit honestate doctrinam
-          </SmallText>
-        </TextWrapper>
-        <Photo src={my_photo} alt={'author_photo'} />
+        <FlexWrapper alignItems={'center'} style={{ height: '100%' }}>
+          <TextWrapper>
+            <BigText>
+              Building designs that work purely driven by Passion for art and Design
+            </BigText>
+            <SmallText>
+              Labore accusam in modo compungi, iacentem substantiales um se sed esse haec. Possit
+              facis qui a a a patriam Dianae sibi aperit honestate doctrinam
+            </SmallText>
+          </TextWrapper>
+          <Photo src={my_photo} alt={'author_photo'} />
+        </FlexWrapper>
       </Container>
     </StyledMain>
   );
@@ -23,10 +28,10 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   //min-height: 882px;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  display: flex;
-  align-items: center;
+  //display: flex;
+  //align-items: center;
 `;
 
 const TextWrapper = styled.div`
@@ -53,9 +58,10 @@ const SmallText = styled.span`
 `;
 
 const Photo = styled.img`
+  height: 100%;
   position: absolute;
   right: 0;
   z-index: -1;
-  bottom: -250px;
+  //bottom: -250px;
   left: 550px;
 `;
