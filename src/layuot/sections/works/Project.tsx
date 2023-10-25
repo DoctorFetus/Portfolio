@@ -37,9 +37,6 @@ export const Project = ({ title, img, description, previewLink, codeLink }: Prop
 
 const StyledProject = styled.div`
   width: 45%;
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
   margin: 30px;
 `;
 

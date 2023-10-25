@@ -23,7 +23,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  min-height: 876px;
+  min-height: 1030px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -38,7 +38,6 @@ const TextWrapper = styled.div`
 
 const BigText = styled.span`
   font-size: 110px;
-  //font-style: normal;
   font-weight: 900;
   line-height: 100%; /* 110px */
   letter-spacing: -4.4px;
@@ -55,10 +54,9 @@ const SmallText = styled.span`
 
 const Photo = styled.img`
   position: absolute;
-  //height: 876px;
   right: 0;
   z-index: -1;
-  bottom: -200px;
+  bottom: -250px;
   left: 700px;
   //top: -10px;
 `;
