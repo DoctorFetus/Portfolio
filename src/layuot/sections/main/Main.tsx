@@ -45,7 +45,7 @@ const TextWrapper = styled.div`
 `;
 
 const BigText = styled.span`
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 900;
   line-height: 100%; /* 110px */
   letter-spacing: -4.4px;
