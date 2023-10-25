@@ -12,11 +12,11 @@ export const Main = () => {
         <FlexWrapper alignItems={'center'} style={{ height: '100%' }}>
           <TextWrapper>
             <BigText>
-              Building designs that work purely driven by Passion for art and Design
+              Creating web solutions fueled by a strong passion for frontend development and design
             </BigText>
             <SmallText>
-              Labore accusam in modo compungi, iacentem substantiales um se sed esse haec. Possit
-              facis qui a a a patriam Dianae sibi aperit honestate doctrinam
+              I'm a frontend developer, specializing in crafting React-based Single Page
+              Applications
             </SmallText>
           </TextWrapper>
           {/*<Photo src={my_photo} alt={'author_photo'} />*/}
@@ -39,7 +39,8 @@ const StyledMain = styled.div`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 829px;
+  //max-width: 829px;
+  max-width: 900px;
   gap: 35px;
 `;
 

@@ -20,7 +20,10 @@ export const Project = ({ title, img, description, previewLink, codeLink }: Prop
         <Image src={img || projectTemplate} alt={'project'} />
         <Title>{title}</Title>
         <Description>{description}</Description>
-        <FlexWrapper gap={'48px'} style={{ marginTop: '20px' }}>
+        <FlexWrapper
+          gap={'48px'}
+          style={{ marginTop: '20px', position: 'absolute', bottom: '5px' }}
+        >
           <StyledLink href={previewLink} target={'_blank'}>
             <BsLink45Deg size={20} />
             Live Preview
@@ -38,6 +41,8 @@ export const Project = ({ title, img, description, previewLink, codeLink }: Prop
 const StyledProject = styled.div`
   width: 45%;
   margin: 30px;
+  min-height: 565px;
+  position: relative;
 `;
 
 const Image = styled.img`

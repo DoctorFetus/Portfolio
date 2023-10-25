@@ -14,8 +14,7 @@ export const Contacts = () => {
               I’m available for a exciting new project. <span>Let’s Talk</span>.
             </Phrase>
             <Information>
-              You can send me a message here OR contact me on any social networks. We can grab a
-              coffee and talk it over a phone.
+              You can send me a message here OR contact me on any social networks.
             </Information>
           </Text>
           <StyledForm>

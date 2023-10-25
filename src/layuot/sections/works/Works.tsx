@@ -21,25 +21,25 @@ export const Works = () => {
             title={'Todolist'}
             img={todolist}
             description={
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
+              ' Seamlessly connecting to the server through Axios, this task list application utilizes Redux Thunk for all server interactions. It offers user login, and robust error handling for a smooth, server-backed task management experience. All forms are processed using Formik.'
             }
             codeLink={'https://github.com/DoctorFetus/todolist_learn'}
             previewLink={'https://andrey-kuznetsov.github.io/todolist/'}
           />
           <Project
-            title={'Social-network'}
+            title={'Social network'}
             img={socialNetwork}
             description={
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
+              'A social network platform featuring server integration, utilizing React Router DOM for routing, offering user registration, full profile customization, and friend management. Additionally, an ongoing development includes a chat system built on WebSocket technology for real-time interactions.'
             }
             codeLink={'https://github.com/DoctorFetus/React-Samurai_way'}
             previewLink={'https://social-network-doctorfetus.vercel.app/profile'}
           />
           <Project
-            title={'Social-network'}
+            title={'Nested list'}
             img={todo2}
             description={
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
+              'A nested to-do list built using recursive algorithms with the implementation of all CRUD (Create, Read, Update, Delete) operations, using Redux Toolkit for data processing and storage. Material UI is used for interface development. Has a light and dark theme.'
             }
             codeLink={'https://github.com/DoctorFetus/recursive-shopping-list'}
           />
@@ -47,7 +47,7 @@ export const Works = () => {
             title={'Counter'}
             img={counter_new}
             description={
-              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At blanditiis commodi eaque odit quaerat quibusdam saepe sed, tenetur vitae. Dolorem eius illo perferendis quis soluta? Doloremque expedita harum inventore maiores maxime nemo numquam quas quibusdam, rem? Natus nemo quae quod!'
+              'Built on the standard Redux library, this counter comes with built-in value validation for accurate counting. Crafted with clean, vanilla CSS for a stylish, user-friendly design'
             }
             codeLink={'https://github.com/DoctorFetus/Counter_Maria'}
           />
