@@ -19,7 +19,7 @@ export const Main = () => {
               facis qui a a a patriam Dianae sibi aperit honestate doctrinam
             </SmallText>
           </TextWrapper>
-          <Photo src={my_photo} alt={'author_photo'} />
+          {/*<Photo src={my_photo} alt={'author_photo'} />*/}
         </FlexWrapper>
       </Container>
     </StyledMain>
@@ -27,11 +27,13 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  //min-height: 882px;
   height: 95vh;
-  width: 100%;
-  //display: flex;
-  //align-items: center;
+  background-image: url(${my_photo});
+  background-position: center; /* Центрируем изображение по горизонтали и вертикали */
+  background-size: 40%; /* Устанавливаем размер изображения */
+  background-repeat: no-repeat; /* Запрещаем повтор изображения */
+  background-position-x: 80%;
+  background-position-y: 100%;
 `;
 
 const TextWrapper = styled.div`
@@ -59,8 +61,9 @@ const SmallText = styled.span`
 
 const Photo = styled.img`
   height: 100%;
+  //width: 100%;
   position: absolute;
   right: 0;
   z-index: -1;
-  transform: translateX(30%);
+  transform: translateX(20%);
 `;
