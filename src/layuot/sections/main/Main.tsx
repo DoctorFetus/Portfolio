@@ -22,7 +22,8 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  min-height: 882px;
+  //min-height: 882px;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
