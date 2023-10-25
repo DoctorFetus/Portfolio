@@ -56,5 +56,5 @@ const Photo = styled.img`
   right: 0;
   z-index: -1;
   bottom: -250px;
-  left: 600px;
+  left: 550px;
 `;
