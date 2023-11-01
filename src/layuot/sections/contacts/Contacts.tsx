@@ -80,6 +80,10 @@ const StyledForm = styled.form`
     resize: none;
     height: 135px;
   }
+
+  @media ${theme.media.mobile} {
+    display: none;
+  }
 `;
 
 const Field = styled.input`

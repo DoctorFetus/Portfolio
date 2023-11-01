@@ -3,6 +3,7 @@ import { FlexWrapper } from '../../../../components/FlexWrapper';
 import styled from 'styled-components';
 import React from 'react';
 import { SkillText } from '../../../../components/SkillText';
+import { theme } from '../../../../styles/Theme';
 
 type Props = {
   title: string;
@@ -27,4 +28,9 @@ export const Skill = ({ title, icon }: Props) => {
 const StyledSkill = styled.div`
   margin-top: 60px;
   width: 20%;
+
+  @media ${theme.media.mobile} {
+    margin-top: 40px;
+    width: 50%;
+  }
 `;

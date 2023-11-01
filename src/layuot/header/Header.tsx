@@ -5,6 +5,7 @@ import { Container } from '../../components/container/Container';
 import React from 'react';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import { OutlineIconsLinks } from '../../components/socialLinks/OutlineIconsLinks';
+import { theme } from '../../styles/Theme';
 
 export const Header = () => {
   return (
@@ -29,4 +30,8 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
+
+  @media ${theme.media.mobile} {
+    display: none;
+  }
 `;

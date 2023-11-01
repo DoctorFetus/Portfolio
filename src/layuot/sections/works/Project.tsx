@@ -46,8 +46,9 @@ const StyledProject = styled.div`
 `;
 
 const Image = styled.img`
-  width: 552px;
-  height: 320px;
+  max-width: 552px;
+  width: 100%;
+  min-height: 320px;
   object-fit: contain;
   margin: 10px;
   border: 1px ${theme.colors.darkFont} solid;

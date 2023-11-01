@@ -9,4 +9,8 @@ export const SectionTitle = styled.h2`
   line-height: 27px; /* 168.75% */
   letter-spacing: 4.8px;
   text-transform: uppercase;
+
+  @media ${theme.media.mobile} {
+    margin-top: 30px;
+  }
 `;
