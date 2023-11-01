@@ -7,5 +7,9 @@ export const theme = {
     lightFont: '#777',
     contactsBg: 'rgba(241, 241, 241, 0.10)',
     footerIcons: '#CCCCCC'
+  },
+  media: {
+    tablet: 'screen and (max-width: 768px)',
+    mobile: 'screen and (max-width: 576px)'
   }
 };

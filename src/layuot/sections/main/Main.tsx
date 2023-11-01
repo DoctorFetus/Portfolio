@@ -9,18 +9,15 @@ export const Main = () => {
   return (
     <StyledMain>
       <Container style={{ position: 'relative' }}>
-        <FlexWrapper alignItems={'center'} style={{ height: '100%' }}>
-          <TextWrapper>
-            <BigText>
-              Creating web solutions fueled by a strong passion for frontend development and design
-            </BigText>
-            <SmallText>
-              I'm a frontend developer, specializing in crafting React-based Single Page
-              Applications
-            </SmallText>
-          </TextWrapper>
-          {/*<Photo src={my_photo} alt={'author_photo'} />*/}
-        </FlexWrapper>
+        <TextWrapper>
+          <BigText>
+            Creating web solutions fueled by a strong passion for frontend development and design
+          </BigText>
+          <SmallText>
+            I'm a frontend developer, specializing in crafting React-based Single Page Applications
+          </SmallText>
+        </TextWrapper>
+        {/*<Photo src={my_photo} alt={'author_photo'} />*/}
       </Container>
     </StyledMain>
   );
@@ -34,14 +31,28 @@ const StyledMain = styled.div`
   background-repeat: no-repeat; /* Запрещаем повтор изображения */
   background-position-x: 80%;
   background-position-y: 100%;
+
+  @media ${theme.media.mobile} {
+    background-size: 100%; /* Устанавливаем размер изображения */
+    background-position-x: 50%;
+    background-position-y: 100%;
+  }
 `;
 
 const TextWrapper = styled.div`
   display: flex;
+  height: 100%;
+  justify-content: center;
   flex-direction: column;
-  //max-width: 829px;
   max-width: 900px;
   gap: 35px;
+
+  @media ${theme.media.mobile} {
+    gap: 15px;
+    align-items: start;
+    justify-content: start;
+    margin-top: 20%;
+  }
 `;
 
 const BigText = styled.span`
@@ -50,6 +61,11 @@ const BigText = styled.span`
   line-height: 100%; /* 110px */
   letter-spacing: -4.4px;
   color: ${theme.colors.light};
+
+  @media ${theme.media.mobile} {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
 `;
 
 const SmallText = styled.span`
@@ -58,6 +74,10 @@ const SmallText = styled.span`
   font-weight: 400;
   line-height: 27px;
   max-width: 728px;
+
+  @media ${theme.media.mobile} {
+    font-size: 15px;
+  }
 `;
 
 const Photo = styled.img`
