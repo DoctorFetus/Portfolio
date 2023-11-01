@@ -40,4 +40,9 @@ export const GlobalStyled = createGlobalStyle`
    color: inherit;
  }
  
+ h2 {
+   margin: 0;
+   padding: 0;
+ }
+ 
 `;

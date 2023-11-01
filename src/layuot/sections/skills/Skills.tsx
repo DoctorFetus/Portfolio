@@ -34,4 +34,5 @@ const StyledSkills = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 30px;
 `;

@@ -59,6 +59,6 @@ export const Works = () => {
 
 const StyledWorks = styled.div`
   background-color: ${theme.colors.light};
-  min-height: 700px;
-  margin-top: -5px;
+  //min-height: 700px;
+  padding-top: 60px;
 `;

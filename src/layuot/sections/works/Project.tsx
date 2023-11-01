@@ -20,10 +20,7 @@ export const Project = ({ title, img, description, previewLink, codeLink }: Prop
         <Image src={img || projectTemplate} alt={'project'} />
         <Title>{title}</Title>
         <Description>{description}</Description>
-        <FlexWrapper
-          gap={'48px'}
-          style={{ marginTop: '20px', position: 'absolute', bottom: '5px' }}
-        >
+        <LinksWrapper gap={'48px'}>
           <StyledLink href={previewLink} target={'_blank'}>
             <BsLink45Deg size={20} />
             Live Preview
@@ -32,7 +29,7 @@ export const Project = ({ title, img, description, previewLink, codeLink }: Prop
             <AiFillGithub size={20} />
             View Code
           </StyledLink>
-        </FlexWrapper>
+        </LinksWrapper>
       </FlexWrapper>
     </StyledProject>
   );
@@ -43,6 +40,10 @@ const StyledProject = styled.div`
   margin: 30px;
   min-height: 565px;
   position: relative;
+
+  @media ${theme.media.mobile} {
+    width: 100%;
+  }
 `;
 
 const Image = styled.img`
@@ -52,6 +53,13 @@ const Image = styled.img`
   object-fit: contain;
   margin: 10px;
   border: 1px ${theme.colors.darkFont} solid;
+
+  @media ${theme.media.mobile} {
+    max-width: 376px;
+    min-height: 0;
+    object-fit: cover;
+    border: none;
+  }
 `;
 
 const Title = styled.h4`
@@ -71,6 +79,17 @@ const Description = styled.p`
   font-style: normal;
   line-height: 27px;
   max-width: 600px;
+`;
+
+const LinksWrapper = styled(FlexWrapper)`
+  margin-top: 20px;
+  position: absolute;
+  bottom: 5px;
+
+  @media ${theme.media.mobile} {
+    position: inherit;
+    margin-top: 30px;
+  }
 `;
 
 const StyledLink = styled.a`
