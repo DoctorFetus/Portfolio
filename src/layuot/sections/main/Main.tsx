@@ -32,7 +32,7 @@ const StyledMain = styled.div`
   background-position-x: 80%;
   background-position-y: 100%;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     background-size: 100%; /* Устанавливаем размер изображения */
     background-position-x: 50%;
     background-position-y: 100%;
@@ -47,7 +47,7 @@ const TextWrapper = styled.div`
   max-width: 900px;
   gap: 35px;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     gap: 15px;
     align-items: start;
     justify-content: start;
@@ -62,7 +62,7 @@ const BigText = styled.span`
   letter-spacing: -4.4px;
   color: ${theme.colors.light};
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     font-size: 40px;
     letter-spacing: -1px;
   }
@@ -75,7 +75,7 @@ const SmallText = styled.span`
   line-height: 27px;
   max-width: 728px;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     font-size: 15px;
   }
 `;

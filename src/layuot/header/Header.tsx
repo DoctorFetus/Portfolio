@@ -6,10 +6,11 @@ import React from 'react';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import { OutlineIconsLinks } from '../../components/socialLinks/OutlineIconsLinks';
 import { theme } from '../../styles/Theme';
+import { MobileMenu } from './mobileMenu/MobileMenu';
 
 export const Header = () => {
   return (
-    <div>
+    <HeaderWrapper>
       <StyledHeader>
         <Container>
           <FlexWrapper alignItems={'center'} justifyContent={'space-between'}>
@@ -21,17 +22,20 @@ export const Header = () => {
           </FlexWrapper>
         </Container>
       </StyledHeader>
-    </div>
+      <MobileMenu />
+    </HeaderWrapper>
   );
 };
 
-const StyledHeader = styled.header`
+const HeaderWrapper = styled.header``;
+
+const StyledHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     display: none;
   }
 `;
