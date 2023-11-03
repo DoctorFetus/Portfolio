@@ -15,6 +15,13 @@ const StyledLogo = styled.a`
   display: flex;
   align-items: end;
   gap: 10px;
+
+  @media ${theme.media.tablet} {
+    gap: 5px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Profession = styled.h1`

@@ -8,4 +8,9 @@ export const SkillText = styled.h2`
   line-height: 27px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  width: 100%;
+
+  @media ${theme.media.mobile} {
+    font-size: 12px;
+  }
 `;

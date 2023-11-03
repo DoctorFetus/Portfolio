@@ -6,7 +6,7 @@ export const SectionTitle = styled.h2`
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  line-height: 27px; /* 168.75% */
+  line-height: 27px;
   letter-spacing: 4.8px;
   text-transform: uppercase;
 `;

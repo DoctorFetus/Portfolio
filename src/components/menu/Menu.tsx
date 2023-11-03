@@ -24,6 +24,12 @@ const StyledMenu = styled.nav`
     display: flex;
     list-style: none;
     gap: 30px;
+
+    @media ${theme.media.tablet} {
+      margin-top: 100px;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 `;
 

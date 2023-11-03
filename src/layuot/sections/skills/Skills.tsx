@@ -34,5 +34,9 @@ const StyledSkills = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 30px;
+  padding: 50px 0;
+
+  @media ${theme.media.mobile} {
+    padding: 50px 0;
+  }
 `;
