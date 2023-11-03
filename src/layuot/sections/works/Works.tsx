@@ -62,7 +62,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   @media ${theme.media.tablet} {
-    gap: 20px;
+    gap: 76px;
     margin-top: 30px;
   }
 `;

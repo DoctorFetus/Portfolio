@@ -41,7 +41,7 @@ const StyledProject = styled.div`
   min-height: 565px;
   position: relative;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     width: 100%;
     margin: 0;
     min-height: 100px;
@@ -56,7 +56,7 @@ const Image = styled.img`
   margin: 10px;
   border: 1px ${theme.colors.darkFont} solid;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     max-width: 376px;
     min-height: 0;
     object-fit: cover;
@@ -85,23 +85,22 @@ const Description = styled.p`
   font-style: normal;
   line-height: 27px;
   max-width: 600px;
+  padding-bottom: 30px;
 
   @media ${theme.media.tablet} {
     font-size: 17px;
     text-align: left;
     white-space: normal;
-    padding: 0;
   }
 `;
 
 const LinksWrapper = styled(FlexWrapper)`
-  margin-top: 20px;
   position: absolute;
   bottom: 5px;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     position: inherit;
-    margin-top: 30px;
+    //margin-top: 30px;
     display: flex;
     justify-content: space-between;
     width: 100%;
