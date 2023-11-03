@@ -8,10 +8,10 @@ export const Contacts = () => {
   return (
     <StyledContacts>
       <Container>
-        <FlexWrapper gap={'304px'} justifyContent={'center'} alignItems={'center'}>
+        <Wrapper>
           <Text>
             <Phrase>
-              I’m available for a exciting new project. <span>Let’s Talk</span>.
+              I’m available for a exciting new project. <br /> <span>Let’s Talk</span>.
             </Phrase>
             <Information>
               You can send me a message here OR contact me on any social networks.
@@ -28,18 +28,29 @@ export const Contacts = () => {
               <Icon iconId={'submitArrow'} viewBox={'0 0 14 10'} width={'14'} height={'10'} />
             </StyledButton>
           </StyledForm>
-        </FlexWrapper>
+        </Wrapper>
       </Container>
     </StyledContacts>
   );
 };
 
 const StyledContacts = styled.section`
-  //background-color: #8d5757;
   min-height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  gap: 304px;
+  justify-content: center;
+  align-items: center;
+
+  @media ${theme.media.tablet} {
+    flex-direction: column;
+    gap: 50px;
+  }
 `;
 
 const Text = styled.div`
@@ -56,6 +67,10 @@ const Phrase = styled.h4`
   span {
     text-decoration: underline;
   }
+
+  @media ${theme.media.mobile} {
+    font-size: 30px;
+  }
 `;
 
 const Information = styled.p`
@@ -66,6 +81,12 @@ const Information = styled.p`
   line-height: 27px;
   margin-top: 30px;
   max-width: 421px;
+
+  @media ${theme.media.mobile} {
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 15px;
+  }
 `;
 
 const StyledForm = styled.form`
@@ -79,10 +100,6 @@ const StyledForm = styled.form`
   textarea {
     resize: none;
     height: 135px;
-  }
-
-  @media ${theme.media.mobile} {
-    display: none;
   }
 `;
 

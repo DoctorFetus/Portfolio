@@ -70,4 +70,9 @@ const Copyright = styled.small`
   font-weight: 400;
   line-height: 27px;
   margin-top: 25px;
+
+  @media ${theme.media.mobile} {
+    font-size: 13px;
+    margin-top: 10px;
+  }
 `;
