@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
 import { SectionTitle } from '../../../components/SectionTitle';
-import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Project } from './Project';
 
 import socialNetwork from '../../../assets/images/projects/social-network.png';
@@ -16,7 +15,7 @@ export const Works = () => {
     <StyledWorks>
       <SectionTitle>Works</SectionTitle>
       <Container>
-        <FlexWrapper wrap={'wrap'} justifyContent={'center'} alignItems={'center'}>
+        <Wrapper>
           <Project
             title={'Todolist'}
             img={todolist}
@@ -51,14 +50,24 @@ export const Works = () => {
             }
             codeLink={'https://github.com/DoctorFetus/Counter_Maria'}
           />
-        </FlexWrapper>
+        </Wrapper>
       </Container>
     </StyledWorks>
   );
 };
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media ${theme.media.tablet} {
+    gap: 20px;
+    margin-top: 30px;
+  }
+`;
+
 const StyledWorks = styled.div`
   background-color: ${theme.colors.light};
-  //min-height: 700px;
-  padding-top: 60px;
+  padding: 50px 0;
 `;

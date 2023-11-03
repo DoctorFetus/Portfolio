@@ -43,7 +43,7 @@ const StyledContacts = styled.section`
 
 const Wrapper = styled.div`
   display: flex;
-  gap: 304px;
+  gap: 20%;
   justify-content: center;
   align-items: center;
 
@@ -114,6 +114,7 @@ const Field = styled.input`
   font-style: normal;
   font-weight: 400;
   line-height: 101.5%;
+  border-radius: 0;
 
   &:focus-visible {
     outline: 1px solid;

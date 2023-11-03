@@ -43,6 +43,8 @@ const StyledProject = styled.div`
 
   @media ${theme.media.mobile} {
     width: 100%;
+    margin: 0;
+    min-height: 100px;
   }
 `;
 
@@ -69,6 +71,10 @@ const Title = styled.h4`
   font-weight: 600;
   line-height: 27px;
   margin-top: 8px;
+
+  @media ${theme.media.tablet} {
+    font-size: 18px;
+  }
 `;
 
 const Description = styled.p`
@@ -79,6 +85,13 @@ const Description = styled.p`
   font-style: normal;
   line-height: 27px;
   max-width: 600px;
+
+  @media ${theme.media.tablet} {
+    font-size: 17px;
+    text-align: left;
+    white-space: normal;
+    padding: 0;
+  }
 `;
 
 const LinksWrapper = styled(FlexWrapper)`
@@ -89,6 +102,9 @@ const LinksWrapper = styled(FlexWrapper)`
   @media ${theme.media.mobile} {
     position: inherit;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 `;
 
@@ -99,4 +115,8 @@ const StyledLink = styled.a`
   letter-spacing: 1px;
   text-decoration: underline;
   cursor: pointer;
+
+  @media ${theme.media.mobile} {
+    font-size: 13px;
+  }
 `;
