@@ -92,7 +92,6 @@ const SmallText = styled.span`
 
 const Photo = styled.img`
   height: 100%;
-  //height: 1000px;
   @media ${theme.media.tablet} {
     height: auto;
     width: 100%;

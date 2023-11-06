@@ -39,6 +39,7 @@ const StyledContacts = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 
 const Wrapper = styled.div`
@@ -105,7 +106,7 @@ const StyledForm = styled.form`
 
 const Field = styled.input`
   width: 100%;
-  background-color: ${theme.colors.contactsBg};
+  background-color: ${theme.colors.darkFont};
   border: none;
   padding: 15px;
   color: ${theme.colors.lightFont};
