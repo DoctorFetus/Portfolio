@@ -27,7 +27,11 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  height: 95vh;
+  //height: 95vh;
+
+  @media ${theme.media.tablet} {
+    min-height: 100vh;
+  }
 
   @media ${theme.media.tablet} {
     height: 100vh;
@@ -57,7 +61,7 @@ const TextWrapper = styled.div`
     gap: 15px;
     align-items: start;
     justify-content: start;
-    top: 7%;
+    top: 10%;
   }
 `;
 
@@ -69,14 +73,14 @@ const BigText = styled.span`
   color: ${theme.colors.light};
 
   @media ${theme.media.tablet} {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: -1px;
   }
 `;
 
 const SmallText = styled.span`
   color: ${theme.colors.light};
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 27px;
   max-width: 728px;
