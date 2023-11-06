@@ -68,7 +68,7 @@ const Phrase = styled.h4`
     text-decoration: underline;
   }
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     font-size: 30px;
   }
 `;
@@ -82,7 +82,7 @@ const Information = styled.p`
   margin-top: 30px;
   max-width: 421px;
 
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     font-size: 15px;
     line-height: 21px;
     margin-top: 15px;

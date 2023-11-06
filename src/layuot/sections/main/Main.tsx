@@ -8,16 +8,19 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 export const Main = () => {
   return (
     <StyledMain>
-      <Container style={{ position: 'relative' }}>
-        <TextWrapper>
-          <BigText>
-            Creating web solutions fueled by a strong passion for frontend development and design
-          </BigText>
-          <SmallText>
-            I'm a frontend developer, specializing in crafting React-based Single Page Applications
-          </SmallText>
-        </TextWrapper>
-        {/*<Photo src={my_photo} alt={'author_photo'} />*/}
+      <Container>
+        <Wrapper>
+          <TextWrapper>
+            <BigText>
+              Creating web solutions fueled by a strong passion for frontend development and design
+            </BigText>
+            <SmallText>
+              I'm a frontend developer, specializing in crafting React-based Single Page
+              Applications
+            </SmallText>
+          </TextWrapper>
+          <Photo src={my_photo} alt={'author_photo'} />
+        </Wrapper>
       </Container>
     </StyledMain>
   );
@@ -25,33 +28,36 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   height: 95vh;
-  background-image: url(${my_photo});
-  background-position: center; /* Центрируем изображение по горизонтали и вертикали */
-  background-size: 40%; /* Устанавливаем размер изображения */
-  background-repeat: no-repeat; /* Запрещаем повтор изображения */
-  background-position-x: 80%;
-  background-position-y: 100%;
 
   @media ${theme.media.tablet} {
-    background-size: 100%; /* Устанавливаем размер изображения */
-    background-position-x: 50%;
-    background-position-y: 100%;
+    height: 100vh;
   }
 `;
 
-const TextWrapper = styled.div`
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
   display: flex;
+  align-items: end;
+  justify-content: end;
+  position: relative;
+`;
+
+const TextWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  left: 0;
   height: 100%;
   justify-content: center;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 600px;
   gap: 35px;
 
   @media ${theme.media.tablet} {
     gap: 15px;
     align-items: start;
     justify-content: start;
-    margin-top: 20%;
+    top: 7%;
   }
 `;
 
@@ -82,9 +88,9 @@ const SmallText = styled.span`
 
 const Photo = styled.img`
   height: 100%;
-  //width: 100%;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  transform: translateX(20%);
+  //height: 1000px;
+  @media ${theme.media.tablet} {
+    height: auto;
+    width: 100%;
+  }
 `;
