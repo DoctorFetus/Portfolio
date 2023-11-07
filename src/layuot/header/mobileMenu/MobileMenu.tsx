@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { theme } from '../../../styles/Theme';
 import { Logo } from '../../../components/logo/Logo';
 import { OutlineIconsLinks } from '../../../components/socialLinks/OutlineIconsLinks';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Menu } from '../../../components/menu/Menu';
 
 export const MobileMenu = () => {
@@ -11,6 +11,11 @@ export const MobileMenu = () => {
   const onClickHandler = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = 'unset';
+  }, [isOpen]);
 
   return (
     <StyledMobileMenu>
@@ -44,6 +49,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     background-color: ${theme.colors.lightFont};
     left: 40px;
     bottom: 50px;
+    transition: ${theme.animations.transition};
 
     ${props =>
       props.isOpen &&
@@ -59,6 +65,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       width: 36px;
       height: 2px;
       background-color: ${theme.colors.lightFont};
+      transition: ${theme.animations.transition};
       ${props =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
@@ -74,6 +81,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       width: 24px;
       height: 2px;
       background-color: ${theme.colors.lightFont};
+      transition: ${theme.animations.transition};
       ${props =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
@@ -88,10 +96,9 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
   }
 `;
 
-const StyledMobileMenu = styled.div``;
+const StyledMobileMenu = styled.nav``;
 
 const MobileMenuWrapper = styled.div<{ isOpen: boolean }>`
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -99,14 +106,17 @@ const MobileMenuWrapper = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   background-color: ${theme.colors.dark};
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0.9;
+  transform: translateY(-100%);
+  transition: 1s ease-in-out;
   ${props =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      opacity: 0.9;
+      transform: translateY(0);
     `}
 `;
