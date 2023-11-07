@@ -7,11 +7,13 @@ import { Works } from './layuot/sections/works/Works';
 import { Contacts } from './layuot/sections/contacts/Contacts';
 import { Footer } from './layuot/footer/Footer';
 import { Particle } from './components/particles/Particle';
+import { GoTopBtn } from './components/goTopBtn/GoTopBtn';
 
 function App() {
   return (
     <div className="App">
       <Particle />
+      <GoTopBtn />
       <Header />
       <Main />
       <Skills />

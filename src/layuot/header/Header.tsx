@@ -10,7 +10,7 @@ import { MobileMenu } from './mobileMenu/MobileMenu';
 
 export const Header = () => {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper id={'header'}>
       <StyledHeader>
         <Container>
           <FlexWrapper alignItems={'center'} justifyContent={'space-between'}>

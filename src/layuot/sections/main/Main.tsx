@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import my_photo from '../../../assets/images/my_photo.png';
 import { Container } from '../../../components/container/Container';
 import { theme } from '../../../styles/Theme';
-import { FlexWrapper } from '../../../components/FlexWrapper';
 
 export const Main = () => {
   return (
