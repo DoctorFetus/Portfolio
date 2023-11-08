@@ -5,6 +5,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import React from 'react';
 import { BsLink45Deg } from '@react-icons/all-files/bs/BsLink45Deg';
 import { AiFillGithub } from '@react-icons/all-files/ai/AiFillGithub';
+import { Fade } from 'react-awesome-reveal';
 
 type Props = {
   title: string;
@@ -16,21 +17,23 @@ type Props = {
 export const Project = ({ title, img, description, previewLink, codeLink }: Props) => {
   return (
     <StyledProject>
-      <FlexWrapper direction={'column'} alignItems={'center'}>
-        <Image src={img || projectTemplate} alt={'project'} />
-        <Title>{title}</Title>
-        <Description>{description}</Description>
-        <LinksWrapper gap={'48px'}>
-          <StyledLink href={previewLink} target={'_blank'}>
-            <BsLink45Deg size={20} />
-            Live Preview
-          </StyledLink>
-          <StyledLink href={codeLink} target={'_blank'}>
-            <AiFillGithub size={20} />
-            View Code
-          </StyledLink>
-        </LinksWrapper>
-      </FlexWrapper>
+      <Fade direction={'left'}>
+        <FlexWrapper direction={'column'} alignItems={'center'}>
+          <Image src={img || projectTemplate} alt={'project'} />
+          <Title>{title}</Title>
+          <Description>{description}</Description>
+          <LinksWrapper gap={'48px'}>
+            <StyledLink href={previewLink} target={'_blank'}>
+              <BsLink45Deg size={20} />
+              Live Preview
+            </StyledLink>
+            <StyledLink href={codeLink} target={'_blank'}>
+              <AiFillGithub size={20} />
+              View Code
+            </StyledLink>
+          </LinksWrapper>
+        </FlexWrapper>
+      </Fade>
     </StyledProject>
   );
 };
