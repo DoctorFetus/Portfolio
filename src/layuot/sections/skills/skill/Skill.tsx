@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import React from 'react';
 import { SkillText } from '../../../../components/SkillText';
 import { theme } from '../../../../styles/Theme';
+import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 
 type Props = {
   title: string;
@@ -12,15 +13,17 @@ type Props = {
 export const Skill = ({ title, icon }: Props) => {
   return (
     <StyledSkill>
-      <FlexWrapper
-        alignItems={'center'}
-        justifyContent={'center'}
-        direction={'column'}
-        gap={'10px'}
-      >
-        <Icon iconId={icon || 'react'} />
-        <SkillText>{title}</SkillText>
-      </FlexWrapper>
+      <Fade>
+        <FlexWrapper
+          alignItems={'center'}
+          justifyContent={'center'}
+          direction={'column'}
+          gap={'10px'}
+        >
+          <Icon iconId={icon || 'react'} />
+          <SkillText>{title}</SkillText>
+        </FlexWrapper>
+      </Fade>
     </StyledSkill>
   );
 };

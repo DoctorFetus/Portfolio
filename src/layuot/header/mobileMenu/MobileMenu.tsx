@@ -91,7 +91,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     }
   }
 
-  @media ${theme.media.tablet} {
+  @media ${theme.media.headerMin} {
     display: block;
   }
 `;

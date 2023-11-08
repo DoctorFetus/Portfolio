@@ -4,6 +4,7 @@ import { SectionTitle } from '../../../components/SectionTitle';
 import { Skill } from './skill/Skill';
 import { Container } from '../../../components/container/Container';
 import { theme } from '../../../styles/Theme';
+import { Fade } from 'react-awesome-reveal';
 
 export const Skills = () => {
   return (

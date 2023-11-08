@@ -35,7 +35,7 @@ const StyledHeader = styled.div`
   align-items: center;
   margin-top: 40px;
 
-  @media ${theme.media.tablet} {
+  @media ${theme.media.headerMin} {
     display: none;
   }
 `;
