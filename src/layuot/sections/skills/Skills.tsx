@@ -11,18 +11,20 @@ export const Skills = () => {
     <StyledSkills>
       <Container>
         <SectionTitle>Skills</SectionTitle>
-        <FlexWrapper wrap={'wrap'} justifyContent={'space-between'}>
-          <Skill title={'Unit tests'} icon={'unitTests'} />
-          <Skill title={'Storybook'} icon={'storybook'} />
-          <Skill title={'TypeScript'} icon={'typescript'} />
-          <Skill title={'Redux Toolkit'} icon={'redux'} />
-          <Skill title={'Material UI'} icon={'materialui'} />
-          <Skill title={'React'} />
-          <Skill title={'Styled Components'} icon={'styledComponents'} />
-          <Skill title={'Rest API'} icon={'restApi'} />
-          <Skill title={'WebSocket'} icon={'websocket'} />
-          <Skill title={'React Hook Form'} icon={'hookForm'} />
-        </FlexWrapper>
+        <Fade direction={'right'}>
+          <FlexWrapper wrap={'wrap'} justifyContent={'space-between'}>
+            <Skill title={'Unit tests'} icon={'unitTests'} />
+            <Skill title={'Storybook'} icon={'storybook'} />
+            <Skill title={'TypeScript'} icon={'typescript'} />
+            <Skill title={'Redux Toolkit'} icon={'redux'} />
+            <Skill title={'Material UI'} icon={'materialui'} />
+            <Skill title={'React'} />
+            <Skill title={'Styled Components'} icon={'styledComponents'} />
+            <Skill title={'Rest API'} icon={'restApi'} />
+            <Skill title={'WebSocket'} icon={'websocket'} />
+            <Skill title={'React Hook Form'} icon={'hookForm'} />
+          </FlexWrapper>
+        </Fade>
       </Container>
     </StyledSkills>
   );

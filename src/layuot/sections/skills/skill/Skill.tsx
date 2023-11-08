@@ -13,17 +13,15 @@ type Props = {
 export const Skill = ({ title, icon }: Props) => {
   return (
     <StyledSkill>
-      <Fade>
-        <FlexWrapper
-          alignItems={'center'}
-          justifyContent={'center'}
-          direction={'column'}
-          gap={'10px'}
-        >
-          <Icon iconId={icon || 'react'} />
-          <SkillText>{title}</SkillText>
-        </FlexWrapper>
-      </Fade>
+      <FlexWrapper
+        alignItems={'center'}
+        justifyContent={'center'}
+        direction={'column'}
+        gap={'10px'}
+      >
+        <Icon iconId={icon || 'react'} />
+        <SkillText>{title}</SkillText>
+      </FlexWrapper>
     </StyledSkill>
   );
 };
