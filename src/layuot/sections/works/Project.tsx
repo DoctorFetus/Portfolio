@@ -13,11 +13,19 @@ type Props = {
   description?: string;
   previewLink?: string;
   codeLink?: string;
+  animationDirection?: 'left' | 'right';
 };
-export const Project = ({ title, img, description, previewLink, codeLink }: Props) => {
+export const Project = ({
+  title,
+  img,
+  description,
+  previewLink,
+  codeLink,
+  animationDirection
+}: Props) => {
   return (
     <StyledProject>
-      <Fade direction={'left'}>
+      <Fade direction={animationDirection} triggerOnce>
         <FlexWrapper direction={'column'} alignItems={'center'}>
           <Image src={img || projectTemplate} alt={'project'} />
           <Title>{title}</Title>

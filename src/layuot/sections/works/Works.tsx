@@ -18,6 +18,7 @@ export const Works = () => {
       <Container>
         <Wrapper>
           <Project
+            animationDirection={'left'}
             title={'Todolist'}
             img={todolist}
             description={
@@ -27,6 +28,7 @@ export const Works = () => {
             previewLink={'https://andrey-kuznetsov.github.io/todolist/'}
           />
           <Project
+            animationDirection={'right'}
             title={'Social network'}
             img={socialNetwork}
             description={
@@ -36,6 +38,7 @@ export const Works = () => {
             previewLink={'https://social-network-doctorfetus.vercel.app/profile'}
           />
           <Project
+            animationDirection={'left'}
             title={'Nested list'}
             img={todo2}
             description={
@@ -44,6 +47,7 @@ export const Works = () => {
             codeLink={'https://github.com/DoctorFetus/recursive-shopping-list'}
           />
           <Project
+            animationDirection={'right'}
             title={'Counter'}
             img={counter_new}
             description={
