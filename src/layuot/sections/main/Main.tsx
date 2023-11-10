@@ -25,17 +25,7 @@ export const Main = () => {
   );
 };
 
-const StyledMain = styled.div`
-  //height: 95vh;
-
-  @media ${theme.media.tablet} {
-    min-height: 100vh;
-  }
-
-  @media ${theme.media.tablet} {
-    height: 100vh;
-  }
-`;
+const StyledMain = styled.div``;
 
 const Wrapper = styled.div`
   height: 100%;
@@ -44,6 +34,14 @@ const Wrapper = styled.div`
   align-items: end;
   justify-content: end;
   position: relative;
+
+  @media ${theme.media.tablet} {
+    min-height: 100vh;
+    margin-top: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -61,6 +59,7 @@ const TextWrapper = styled.div`
     align-items: start;
     justify-content: start;
     top: 10%;
+    position: inherit;
   }
 `;
 
@@ -79,13 +78,13 @@ const BigText = styled.span`
 
 const SmallText = styled.span`
   color: ${theme.colors.light};
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 27px;
   max-width: 728px;
 
   @media ${theme.media.tablet} {
-    font-size: 15px;
+    font-size: 16px;
   }
 `;
 
