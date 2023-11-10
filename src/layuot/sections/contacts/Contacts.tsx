@@ -1,10 +1,29 @@
 import styled from 'styled-components';
-import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/container/Container';
 import { theme } from '../../../styles/Theme';
 import { Icon } from '../../../components/icon/Icon';
+import emailjs from '@emailjs/browser';
+import { ElementRef, FormEvent, useRef } from 'react';
 
 export const Contacts = () => {
+  const form = useRef<ElementRef<'form'>>(null);
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!form.current) return;
+    emailjs.sendForm('service_1qvoyzi', 'template_0z0vt46', form.current, '0SSLacrgNc9FBBP7K').then(
+      result => {
+        console.log(result.text);
+      },
+      error => {
+        console.log(error.text);
+      }
+    );
+    if (e.currentTarget instanceof HTMLFormElement) {
+      e.currentTarget.reset();
+    }
+  };
+
   return (
     <StyledContacts>
       <Container>
@@ -17,12 +36,11 @@ export const Contacts = () => {
               You can send me a message here OR contact me on any social networks.
             </Information>
           </Text>
-          <StyledForm>
-            <Field placeholder={'Name *'} />
-            <Field placeholder={'Email Address *'} />
-            {/*<Field placeholder={'Address *'} />*/}
-            <Field placeholder={'Phone'} />
-            <Field placeholder={'Your message'} as={'textarea'} />
+          <StyledForm ref={form} onSubmit={sendEmail}>
+            <Field required name={'user_name'} placeholder={'Name *'} />
+            <Field required name={'user_email'} placeholder={'Email Address *'} />
+            <Field required name={'user_phone'} placeholder={'Phone *'} />
+            <Field required name={'message'} placeholder={'Your message'} as={'textarea'} />
             <StyledButton>
               Submit{' '}
               <Icon iconId={'submitArrow'} viewBox={'0 0 14 10'} width={'14'} height={'10'} />
