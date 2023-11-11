@@ -9,7 +9,6 @@ import todolist from '../../../assets/images/projects/todo.png';
 import counter_new from './../../../assets/images/projects/counter_new.png';
 import { Container } from '../../../components/container/Container';
 import { theme } from '../../../styles/Theme';
-import { Fade } from 'react-awesome-reveal';
 
 export const Works = () => {
   return (
