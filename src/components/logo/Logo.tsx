@@ -4,14 +4,14 @@ import { theme } from '../../styles/Theme';
 
 export const Logo = () => {
   return (
-    <StyledLogo href={'https://github.com'}>
+    <StyledLogo>
       <Name>Mikhail Palkin</Name>
       <Profession>Front-End Developer</Profession>
     </StyledLogo>
   );
 };
 
-const StyledLogo = styled.a`
+const StyledLogo = styled.span`
   display: flex;
   align-items: end;
   gap: 10px;

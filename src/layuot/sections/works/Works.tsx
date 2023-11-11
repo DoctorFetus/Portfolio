@@ -45,15 +45,17 @@ export const Works = () => {
               'A nested to-do list built using recursive algorithms with the implementation of all CRUD (Create, Read, Update, Delete) operations, using Redux Toolkit for data processing and storage. Material UI is used for interface development. Has a light and dark theme.'
             }
             codeLink={'https://github.com/DoctorFetus/recursive-shopping-list'}
+            previewLink={'https://recursive-shopping-list-8ofe.vercel.app/'}
           />
           <Project
             animationDirection={'right'}
             title={'Counter'}
             img={counter_new}
             description={
-              'Built on the standard Redux library, this counter comes with built-in value validation for accurate counting. Crafted with clean, vanilla CSS for a stylish, user-friendly design'
+              'Built on the standard Redux library, this counter comes with built-in value validation for accurate counting. It possesses a easily expandable architecture for the subsequent addition of functionality or specific modifications to the existing one. Crafted with clean, vanilla CSS for a stylish, user-friendly design'
             }
             codeLink={'https://github.com/DoctorFetus/Counter_Maria'}
+            previewLink={'https://counter-maria-git-master-doctorfetus.vercel.app/'}
           />
         </Wrapper>
       </Container>
