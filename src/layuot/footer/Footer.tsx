@@ -17,21 +17,8 @@ export const Footer = () => {
           </SocialIcon>
         </SocialIconWrapper>
         <SocialIconWrapper>
-          <SocialIcon
-            href="https://www.linkedin.com/in/mikhail-palkin-a66b42257/"
-            target={'_blank'}
-          >
-            <AiFillLinkedin size={35} color={theme.colors.footerIcons} />
-          </SocialIcon>
-        </SocialIconWrapper>
-        <SocialIconWrapper>
           <SocialIcon href="https://t.me/bvsxtv" target={'_blank'}>
             <FaTelegram size={35} color={theme.colors.footerIcons} />
-          </SocialIcon>
-        </SocialIconWrapper>
-        <SocialIconWrapper>
-          <SocialIcon href="https://www.codewars.com/users/mdpalkin" target={'_blank'}>
-            <SiCodewars size={35} color={theme.colors.footerIcons} />
           </SocialIcon>
         </SocialIconWrapper>
       </SocialIconsList>

@@ -60,7 +60,6 @@ const StyledProject = styled.div`
 `;
 
 const Image = styled.img`
-  max-width: 552px;
   width: 100%;
   min-height: 320px;
   object-fit: contain;
@@ -107,11 +106,10 @@ const Description = styled.p`
 
 const LinksWrapper = styled(FlexWrapper)`
   position: absolute;
-  bottom: 5px;
+  bottom: -5px;
 
   @media ${theme.media.tablet} {
     position: inherit;
-    //margin-top: 30px;
     display: flex;
     justify-content: space-between;
     width: 100%;

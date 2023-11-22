@@ -24,11 +24,11 @@ export const Works = () => {
               ' Seamlessly connecting to the server through Axios, this task list application utilizes Redux Thunk for all server interactions. It offers user login, and robust error handling for a smooth, server-backed task management experience. All forms are processed using Formik.'
             }
             codeLink={'https://github.com/DoctorFetus/todolist_learn'}
-            previewLink={'https://andrey-kuznetsov.github.io/todolist/'}
+            previewLink={' https://todolist-learn.vercel.app'}
           />
           <Project
             animationDirection={'right'}
-            title={'Social network'}
+            title={'Storm'}
             img={socialNetwork}
             description={
               'A social network platform featuring server integration, utilizing React Router DOM for routing, offering user registration, full profile customization, and friend management. Additionally, an ongoing development includes a chat system built on WebSocket technology for real-time interactions.'
@@ -38,7 +38,7 @@ export const Works = () => {
           />
           <Project
             animationDirection={'left'}
-            title={'Nested list'}
+            title={'Nested shop-list'}
             img={todo2}
             description={
               'A nested to-do list built using recursive algorithms with the implementation of all CRUD (Create, Read, Update, Delete) operations, using Redux Toolkit for data processing and storage. Material UI is used for interface development. Has a light and dark theme.'
