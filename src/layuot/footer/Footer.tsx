@@ -1,9 +1,6 @@
 import styled from 'styled-components';
-import { Icon } from '../../components/icon/Icon';
 import React from 'react';
 import { AiFillGithub } from '@react-icons/all-files/ai/AiFillGithub';
-import { AiFillLinkedin } from '@react-icons/all-files/ai/AiFillLinkedin';
-import { SiCodewars } from '@react-icons/all-files/si/SiCodewars';
 import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram';
 import { theme } from '../../styles/Theme';
 

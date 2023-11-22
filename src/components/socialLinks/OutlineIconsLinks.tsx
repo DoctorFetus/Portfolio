@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 import { FlexWrapper } from '../FlexWrapper';
 import { FiGithub } from '@react-icons/all-files/fi/FiGithub';
-import { AiOutlineLinkedin } from '@react-icons/all-files/ai/AiOutlineLinkedin';
 import { RiTelegramLine } from '@react-icons/all-files/ri/RiTelegramLine';
 import React from 'react';
-import { SiCodewars } from '@react-icons/all-files/si/SiCodewars';
 
 export const OutlineIconsLinks = () => {
   return (
