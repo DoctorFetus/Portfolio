@@ -8,7 +8,7 @@ export const OutlineIconsLinks = () => {
   return (
     <StyledLinks>
       <FlexWrapper alignItems={'center'} gap={'25px'}>
-        <IconWrapper href="https://github.com/DoctorFetus" target={'_blank'}>
+        <IconWrapper href="https://github.com/mdpalkin" target={'_blank'}>
           <FiGithub size={34} color={'white'} />
         </IconWrapper>
         <IconWrapper href="https://t.me/bvsxtv" target={'_blank'}>

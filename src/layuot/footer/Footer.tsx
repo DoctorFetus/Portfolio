@@ -9,7 +9,7 @@ export const Footer = () => {
     <StyledFooter>
       <SocialIconsList>
         <SocialIconWrapper>
-          <SocialIcon href="https://github.com/DoctorFetus" target={'_blank'}>
+          <SocialIcon href="https://github.com/mdpalkin" target={'_blank'}>
             <AiFillGithub size={35} color={theme.colors.footerIcons} />
           </SocialIcon>
         </SocialIconWrapper>
